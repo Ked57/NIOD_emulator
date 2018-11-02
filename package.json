@@ -1,0 +1,27 @@
+{
+  "name": "niod_emulator",
+  "version": "1.0.0",
+  "description": "A nodejs emulator for NIOD",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ked57/NIOD_emulator.git"
+  },
+  "keywords": [
+    "NIOD",
+    "emulator",
+    "DCS"
+  ],
+  "author": "Ked",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ked57/NIOD_emulator/issues"
+  },
+  "homepage": "https://github.com/Ked57/NIOD_emulator#readme"
+}
