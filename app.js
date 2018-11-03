@@ -8,7 +8,6 @@ console.log("starting NIOD_emulator");
 const server = net.createServer(socket => {
   console.log(`New client from ${socket.remoteAddress}`);
   socket.on("data", data => {
-    console.log(data);
     dataHandler.handleData(data);
   });
 });
