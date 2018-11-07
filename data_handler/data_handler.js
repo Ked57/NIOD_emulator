@@ -6,7 +6,8 @@ exports.handleData = (data, socket) => {
     console.log(data);
     switch (data.data.name) {
       case "getGroups":
-        answer(getGroups.get(data.data.args));
+        answer(socket, data.callbackId, getGroups.get(data.data.args));
+        break;
       default:
         unHandledRequest(socket);
     }
@@ -24,6 +25,7 @@ const answer = (socket, callbackId, data) => {
   try {
     socket.write(
       JSON.stringify({
+        type: "function",
         callbackId: callbackId,
         data: data
       })

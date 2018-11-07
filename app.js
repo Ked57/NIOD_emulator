@@ -1,6 +1,6 @@
 const net = require("net");
 const PORT = 15488;
-const HOST = "127.0.0.1";
+const HOST = "localhost";
 
 const dataHandler = require("./data_handler/data_handler");
 
@@ -8,7 +8,7 @@ console.log("starting NIOD_emulator");
 const server = net.createServer(socket => {
   console.log(`New client from ${socket.remoteAddress}`);
   socket.on("data", data => {
-    dataHandler.handleData(data);
+    dataHandler.handleData(data, socket);
   });
 });
 

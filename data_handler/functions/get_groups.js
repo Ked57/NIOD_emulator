@@ -1,9 +1,15 @@
 const data = [
   {
     //red coalition example dataset
+    data: {
+      coalition: "red"
+    }
   },
   {
     //blue coalition example dataset
+    data: {
+      coalition: "blue"
+    }
   }
 ];
 
