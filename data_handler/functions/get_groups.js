@@ -1,4 +1,5 @@
 const data = [
+  { data: "invalid coalitionId" },
   {
     //red coalition example dataset
     data: {
